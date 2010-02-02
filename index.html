@@ -3,10 +3,30 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Not An Engagement Party Party</title>
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/cupertino/jquery-ui.css" type="text/css" />
     <link rel="stylesheet" href="screen.css" type="text/css" media="screen"/>
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+        google.load("jquery", "1.4.1");
+        google.load("jqueryui", "1.7.2");
+    </script>
 </head>
 <body>
     <h1>Nana and Ian are <span id="engaged">engaged</span></h1>
     <h2>(But this party isn't about that.)</h2>
+    <button id="rsvp">Click here to RSVP</button>
+
+    <div id="rsvp-dialog" title="RSVP for Nana and Ian's party">
+        <p id="validateTips">All form fields are required.</p>
+        <form>
+            <fieldset>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all" />
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" value="" class="text ui-widget-content ui-corner-all" />
+            </fieldset>
+        </form>
+    </div>
+    <script type="text/javascript" src="form.js"></script>
 </body>
 </html>

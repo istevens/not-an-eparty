@@ -1,8 +1,5 @@
 html {
     font-family: Helvetica, sans-serif;
-}
-
-h1, h2 {
     text-align: center;
 }
 
@@ -29,4 +26,49 @@ h1 span#engaged {
     -webkit-transform: rotate(-7deg); 
     -moz-transform: rotate(-7deg); 
     z-index: -1;
+}
+
+#rsvp {
+    display: block;
+    color: #333;
+    background: #ccc;
+    font-size: 200%;
+    text-decoration: none;
+    margin: 2em auto;
+    padding: 0.25em;
+    border: 1px solid #333;
+    width: 10em;
+    !important; cursor:pointer;
+}
+
+#rsvp:hover {
+    background: #999;
+}
+
+#rsvp-dialog {
+    text-align: left;
+}
+
+label, input { 
+    display: block; 
+}
+
+input.text {
+    margin-bottom: 1em;
+    width: 95%;
+    padding: 0.4em;
+}
+
+fieldset {
+    padding: 0;
+    border: 0;
+    margin-top: 1.5em;
+}
+
+button {
+    font-family: Helvetica, sans-serif;
+}
+
+.ui-widget {
+    font: 1em Helvetica sans-serif;
 }
