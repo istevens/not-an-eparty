@@ -47,6 +47,7 @@ h1 span#engaged {
 
 #rsvp-dialog {
     text-align: left;
+    display: none;
 }
 
 label, input { 

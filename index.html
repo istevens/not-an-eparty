@@ -17,8 +17,8 @@
     <button id="rsvp">Click here to RSVP</button>
 
     <div id="rsvp-dialog" title="RSVP for Nana and Ian's party">
-        <p id="validateTips">All form fields are required.</p>
-        <form>
+        <form id="rsvpForm" method="POST" action="">
+            <p id="validateTips">You have to at least give us your name and email!</p>
             <fieldset>
                 <label for="name">Name:</label>
                 <input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all required" />

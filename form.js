@@ -7,7 +7,7 @@ $(function() {
     $("#rsvp-dialog").dialog({
         bgiframe: true,
         autoOpen: false,
-        height: 300,
+        width: 450,
         modal: true,
         buttons: {
             'Create an account': function() {
