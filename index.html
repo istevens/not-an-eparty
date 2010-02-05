@@ -20,10 +20,19 @@
         <p id="validateTips">All form fields are required.</p>
         <form>
             <fieldset>
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all" />
-                <label for="email">Email</label>
-                <input type="text" name="email" id="email" value="" class="text ui-widget-content ui-corner-all" />
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all required" />
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" value="" class="text ui-widget-content ui-corner-all required email" />
+
+                <label for="recaptcha_response_field" id="recaptcha_label">Let us know you're human:</label>
+                <script type="text/javascript" src="http://api.recaptcha.net/challenge?k=6LfW9QoAAAAAAAktMfKl5B99FIMyrAkspcRvWniO"></script>
+                <noscript>
+                    <iframe src="http://api.recaptcha.net/noscript?k=6LfW9QoAAAAAAAktMfKl5B99FIMyrAkspcRvWniO" height="300" width="500" frameborder="0"></iframe><br />
+                    <textarea name="recaptcha_challenge_field" rows="3" cols="40"></textarea>
+                    <input type='hidden' name='recaptcha_response_field' value='manual_challenge' class="required"/>
+                </noscript>
+
             </fieldset>
         </form>
     </div>
