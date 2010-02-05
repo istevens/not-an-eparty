@@ -73,3 +73,7 @@ button {
 .ui-widget {
     font: 1em Helvetica sans-serif;
 }
+
+.error {
+    color: red;
+}
