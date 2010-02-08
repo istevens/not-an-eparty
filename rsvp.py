@@ -53,4 +53,5 @@ def rsvp(private_key, path):
     except Invalid, error:
         print 'Status: 400'
         print
-        print simplejson.dumps({'errors': error.error_dict})
+        errors = dict([(k,str(v)) for k,v in error.error_dict.iteritems()])
+        print simplejson.dumps({'errors': errors})
