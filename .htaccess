@@ -1,0 +1,6 @@
+AddDefaultCharset UTF-8
+
+RewriteEngine on
+RewriteBase /engagement/
+RewriteRule ^rsvp$ rsvp.py [L]
+RewriteRule ^.git(.*)$ [L,R=404]
