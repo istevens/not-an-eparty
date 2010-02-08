@@ -12,11 +12,12 @@ def validate_recaptcha(values, recaptcha_response, validator):
     from recaptcha.client import captcha
     response = captcha.submit(
         values['recaptcha_challenge_field'],
-        recaptcha_response,
+        values['recaptcha_response_field'],
         validator.private_key,
         validator.remote_ip
     )
-    if response.error_code:
+
+    if not response.is_valid:
         return {'recaptcha_response_field': 'What you typed in was not in the image.'}
 
 
