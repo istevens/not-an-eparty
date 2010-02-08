@@ -36,8 +36,8 @@ class RsvpForm(schema.Schema):
 def create_rsvp(data, path):
     if os.path.isdir(path):
         _m = md5.md5(data['name']).hexdigest()
-        _f = open(os.path.join(path, _m), '+w')
-        csv.writer(_f).writerow(data['name'], data['email'])
+        _f = open(os.path.join(path, _m), 'w+')
+        csv.writer(_f).writerow((data['name'], data['email']))
         _f.close()
     else:
         raise os.error('RSVP path does not exist: %s' % path)
@@ -48,7 +48,7 @@ def rsvp(private_key, path):
     form = RsvpForm(private_key, os.environ["REMOTE_ADDR"])
     try:
         data = form.to_python(cgi.SvFormContentDict())
-        create_rsvp(data)
+        create_rsvp(data, path)
         print 'Status: 200'
         print
     except Invalid, error:
