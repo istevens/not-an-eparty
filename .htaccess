@@ -1,6 +1,8 @@
 AddDefaultCharset UTF-8
 
+SetEnv PYTHON_EGG_CACHE /tmp/.python-eggs
+
 RewriteEngine on
 RewriteBase /engagement/
-RewriteRule ^rsvp$ rsvp.py [L]
+RewriteRule ^rsvp$ settings.py [L]
 RewriteRule ^.git(.*)$ [L,R=404]
