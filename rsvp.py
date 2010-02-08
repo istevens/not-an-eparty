@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-
 import cgi
 import cgitb
 import csv
@@ -18,7 +16,6 @@ def validate_recaptcha(values, recaptcha_response, validator):
         validator.private_key,
         validator.remote_ip
     )
-    print response.error_code
     if response.error_code:
         return {'recaptcha_response_field': 'What you typed in was not in the image.'}
 
