@@ -15,11 +15,18 @@ $(function() {
                     url: 'rsvp',
                     type: 'POST',
                     dataType: 'json',
+                    data: $("#rsvpForm").serialize(),
+                    success: function(html) {
+                        $(this).dialog('close');
+                    },
+                    error: function(req, st, ex) {
+                        alert(req.responseText);
+                    }
                 };
 
                 // Manually trigger validation
                 if ($("#rsvpForm").validate().form() == true) {
-                    $('#rsvpForm').ajaxSubmit(submitOptions);
+                    $.ajax(submitOptions)
                     allFields.removeClass('ui-state-error');
                 }
 
