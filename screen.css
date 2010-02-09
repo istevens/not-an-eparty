@@ -27,6 +27,10 @@ h1 span#engaged {
     -moz-transform: rotate(-7deg); 
 }
 
+img {
+    border: none;
+}
+
 #info {
     margin: 0 auto;
     width: 50%;
