@@ -45,15 +45,8 @@ $(function() {
     });
 
     $('#rsvpForm').validate({
-        rules: {
-            recaptcha_response_field: "required"
-        },
         errorPlacement: function(error, elem) {
-            if(elem.attr("id") == "recaptcha_response_field") {
-                error.insertAfter($('#recaptcha_label'));
-            } else {
-                error.insertBefore(elem);
-            }
+            error.insertBefore(elem);
         },
         focusCleanup: true
     });

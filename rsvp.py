@@ -24,14 +24,6 @@ def validate_recaptcha(values, recaptcha_response, validator):
 class RsvpForm(schema.Schema):
     name = validators.String(notEmpty=True, strip=True)
     email = validators.Email(notEmpty=True, strip=True)
-    recaptcha_challenge_field = validators.String(notEmpty=True)
-    recaptcha_response_field = validators.String(notEmpty=True)
-
-    def __init__(self, private_key, remote_ip):
-        _rc = schema.SimpleFormValidator(validate_recaptcha)
-        _rc.private_key = private_key
-        _rc.remote_ip = remote_ip
-        self.add_chained_validator(_rc)
 
 def create_rsvp(data, path):
     if os.path.isdir(path):
