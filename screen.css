@@ -27,6 +27,20 @@ h1 span#engaged {
     -moz-transform: rotate(-7deg); 
 }
 
+#info {
+    margin: 1em auto;
+    width: 50%;
+    text-align: left;
+}
+
+h3 {
+    margin: 0.125em;
+}
+
+h3 span {
+    font-weight: normal;
+}
+
 #rsvp {
     display: block;
     color: #333;
