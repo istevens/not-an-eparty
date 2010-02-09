@@ -33,12 +33,22 @@ h1 span#engaged {
     text-align: left;
 }
 
+#info div {
+    margin: 2em auto;
+}
+
 h3 {
     margin: 0.125em;
 }
 
 h3 span {
     font-weight: normal;
+}
+
+#download {
+    float: right;
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
 }
 
 #rsvp {
