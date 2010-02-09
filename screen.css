@@ -25,7 +25,6 @@ h1 span#engaged {
     font-weight: 900;
     -webkit-transform: rotate(-7deg); 
     -moz-transform: rotate(-7deg); 
-    z-index: -1;
 }
 
 #rsvp {
