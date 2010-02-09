@@ -27,7 +27,7 @@ class RsvpForm(schema.Schema):
 
 def create_rsvp(data, path):
     if os.path.isdir(path):
-        _m = md5.md5(data['name']).hexdigest()
+        _m = md5.md5(data['email']).hexdigest()
         _f = open(os.path.join(path, _m), 'w+')
         csv.writer(_f).writerow((data['name'], data['email']))
         _f.close()
