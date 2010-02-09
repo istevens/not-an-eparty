@@ -28,7 +28,7 @@ h1 span#engaged {
 }
 
 #info {
-    margin: 1em auto;
+    margin: 0 auto;
     width: 50%;
     text-align: left;
 }
@@ -47,7 +47,7 @@ h3 span {
     background: #ccc;
     font-size: 200%;
     text-decoration: none;
-    margin: 2em auto;
+    margin: 0 auto;
     padding: 0.25em;
     border: 1px solid #333;
     width: 10em;

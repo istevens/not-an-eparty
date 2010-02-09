@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+BEGIN:VEVENT
+TRANSP:OPAQUE
+DTEND;TZID=America/Toronto:20100228T020000
+UID:2278A3CB-B22C-4E22-99B2-9AD402842078
+DTSTAMP:20100209T035232Z
+LOCATION:Spice Safar\, 270 Adelaide St. West\, Toronto\, ON
+DESCRIPTION:We haven't set a date for the wedding. Sometime next year\, 
+ we think. Maybe in the summer\, we don't know.\n\nBut we do know somethi
+ ng: we're getting married!\n\nSound the trumpets! Bang the gongs! Shake 
+ your tambourines!\n\nNo tambourines?\n\nOkay then\, at least come raise 
+ a toast with us. At a little place we've never heard of until last month
+ .\n\nOh\, and this ain't no "engagement party" okay? In fact\, we are he
+ reby calling this the "non-engagement party" party.
+URL;VALUE=URI:http://nanaian.com/engagement
+SEQUENCE:8
+SUMMARY:Nana and Ian's "Not an Engagement Party" Party
+DTSTART;TZID=America/Toronto:20100227T210000
+CREATED:20100209T034857Z
+BEGIN:VALARM
+X-WR-ALARMUID:C0287F1A-274A-4C1D-A435-0BF1859B2D6F
+TRIGGER:-PT15M
+ATTACH;VALUE=URI:Basso
+ACTION:AUDIO
+END:VALARM
+END:VEVENT
+END:VCALENDAR
