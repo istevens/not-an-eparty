@@ -1,12 +1,12 @@
 $(function() {
     var name = $("#name"),
         email = $("#email"),
-        allFields = $([]).add(name).add(email),
-        tips = $("#validateTips");
+        allFields = $([]).add(name).add(email);
 
     $("#rsvp-dialog").dialog({
         bgiframe: true,
         autoOpen: false,
+        draggable: false,
         width: 450,
         modal: true,
         buttons: {

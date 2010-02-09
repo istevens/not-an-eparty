@@ -38,7 +38,7 @@ h1 span#engaged {
     padding: 0.25em;
     border: 1px solid #333;
     width: 10em;
-    !important; cursor:pointer;
+    cursor:pointer !important;
 }
 
 #rsvp:hover {
