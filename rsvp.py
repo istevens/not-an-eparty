@@ -37,7 +37,7 @@ def create_rsvp(data, path):
 def rsvp(private_key, path):
     print "Content-type: application/json"
 
-    form = RsvpForm(private_key, os.environ["REMOTE_ADDR"])
+    form = RsvpForm()
     try:
         data = form.to_python(cgi.SvFormContentDict())
         create_rsvp(data, path)
