@@ -42,9 +42,12 @@ def rsvp(private_key, path):
         data = form.to_python(cgi.SvFormContentDict())
         create_rsvp(data, path)
         print 'Status: 200'
+        print 'Content-Length: 0'
         print
     except Invalid, error:
-        print 'Status: 400'
-        print
         errors = dict([(k,str(v)) for k,v in error.error_dict.iteritems()])
-        print simplejson.dumps({'errors': errors})
+        json = simplejson.dumps({'errors': errors})
+        print 'Status: 400'
+        print 'Content-Length: %d' % len(json)
+        print
+        print json
