@@ -17,7 +17,8 @@ $(function() {
                     dataType: 'json',
                     data: $("#rsvpForm").serialize(),
                     success: function(html) {
-                        $(this).dialog('close');
+                        $("#rsvp-dialog").dialog('close');
+                        $("#rsvp").text('Thanks for RSVPing!');
                     },
                     error: function(req, st, ex) {
                         alert(req.responseText);
